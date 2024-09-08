@@ -1,0 +1,91 @@
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.modal-subtitle {
+    font-size: 18px;
+}
+
+#modal_categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.modal-category label {
+    border: 2px solid var(--color-neutral-200);
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 12px 24px 12px 12px;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+
+.modal-category input:checked + label {
+    border: 2px solid var(--color-primary-900) !important;
+}
+
+.modal-category input {
+    display: none;
+}
+
+.modal-category-icon {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+
+    border-radius: 50%;
+    background-color: var(--color-primary-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-neutral-0);
+}
+
+.days-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: start;
+}
+
+.days-cards div {
+    flex: 1;
+    width: 100%;
+}
+
+.days-cards input {
+    display: none;
+}
+
+.days-cards input:checked + label {
+    border: 2px solid var(--color-primary-900) !important;
+}
+
+.day-card {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid var(--color-neutral-200);
+    cursor: pointer;
+    width: 100%;
+}
+
+.day-title {
+    font-size: 20px;
+    color: var(--color-primary-900);
+}
+
+.day-number {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.avaiable-times {
+    margin-bottom: 0px;
+    color: var(--color-neutral-500);
+}

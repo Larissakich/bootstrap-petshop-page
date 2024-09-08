@@ -1,0 +1,150 @@
+#cta_container {
+    position: relative;
+    padding-bottom: 120px;
+    background-color: var(--color-primary-100);
+}
+
+#cta {
+    display: flex;
+    padding: 0px 5%;
+    padding-right: 0px;
+    height: calc(100vh - 180px);
+}
+
+#cta_texts {
+    width: 50%;
+    padding-top: 4%;
+}
+
+#cta_title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000;
+}
+
+#cta_description {
+    font-size: 1.2rem;
+    color: #000;
+    max-width: 550px;
+}
+
+#cta_banner {
+    display: flex;
+    width: 50%;
+}
+
+#cta_banner_image {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(7px 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+}
+
+#categories {
+    background-color: var(--color-primary-900);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: url(../../images/categorias.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    padding-top: 52px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+
+
+#category_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.category-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--color-primary-100);
+    cursor: pointer;
+    transition: transform 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.category-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.category-description {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-description h4,
+.category-description i {
+    color: var(--color-neutral-800);
+}
+
+.wave-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #cta {
+        flex-direction: column-reverse;
+        height: auto;
+        padding-right: 5%;
+    }
+
+    #cta_texts {
+        width: 100%;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    #cta_title {
+        font-size: 2rem;
+    }
+
+    #cta_description {
+        font-size: 1rem;
+    }
+
+    #cta_buttons {
+        justify-content: center;
+    }
+
+    #cta_banner {
+        width: 100%;
+    }
+
+    #categories {
+        height: auto;
+    }
+}

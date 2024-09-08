@@ -1,0 +1,26 @@
+.btn  {
+    border-radius: 100px;
+    padding: 10px 24px;
+}
+
+.btn-primary {
+    background-color: var(--color-primary-900);
+    color: #fff;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-800);
+}
+
+.btn-primary:active {
+    background-color: var(--color-primary-700) !important;
+}
+
+.btn-outlined-primary {
+    background-color: transparent;
+    color: var(--color-primary-900);
+    border: 2px solid var(--color-primary-900);
+    font-weight: 700;
+}
