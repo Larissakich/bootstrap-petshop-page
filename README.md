@@ -1,8 +1,8 @@
-# Petshop Web Application
+# Petshop
 
 Este é um projeto completo de uma plataforma de petshop, desenvolvido com HTML, CSS, Bootstrap. A aplicação oferece uma landing page inicial, navegação para produtos, telas de criação de conta e login, além de um sistema para agendamento de horários via modal.
 
-## Vizualize o projeto
+## Visualize o projeto
 
 [bootstrap-petshop-page](https://larissakich.github.io/bootstrap-petshop-page/)
 
